@@ -1,0 +1,22 @@
+.title-red{
+    color: #dc322f !important;
+}
+
+.title-blue{
+    color: #528CE0 !important;
+}
+
+.big li{
+    padding: 5px;
+    list-style: none;
+    font-size: larger;
+}
+
+.big li:nth-child(odd){
+    color: #528CE0 !important;
+}
+
+pre{
+    background: #3F3F3F !important;
+    min-height: 400px;
+}

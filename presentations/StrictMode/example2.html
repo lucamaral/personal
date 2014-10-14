@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <script>
+            function Hello(){
+                "use strict";
+
+                this.portuguese = function (){
+                    ola = "Olá";
+                    return ola;
+                };
+
+                this.english = function (){
+                    hello = "Hello";
+                    return hello;
+                };
+            }
+            var hello = new Hello();
+            console.info(hello.portuguese());
+        </script>
+    </body>
+</html>
