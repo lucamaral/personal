@@ -1,0 +1,22 @@
+.orange{
+    color: #e7ad52 !important;
+}
+
+.red{
+    color: #B00000 !important;
+}
+
+.big-text{
+    font-size: 50px !important;
+    padding: 25px !important;
+}
+
+ul{
+    list-style: none !important;
+    font-size: 40px !important;
+    line-height: 1.5 !important;
+}
+
+pre{
+    font-size: 30px !important;
+}

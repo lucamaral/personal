@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NodeJS</title>
+    <link rel="stylesheet" href="../../lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="../../lib/reveal/css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="../../lib/highlightjs/styles/tomorrow-night.css">
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1 class="orange"> Node.js </h1>
+                <hr/>
+                <h4> Lucas Amaral - <strong class="orange"> 30/10/2014 </strong> </h4>
+            </section>
+            <section>
+                <code class="javascript hljs big-text"><span class="hljs-built_in">console</span>.info(<span class="hljs-string">"Hello node.js!!!"</span>);</code>
+            </section>
+            <section>
+                <ul>
+                    <li> 2009 por Ryan Dahl </li>
+                    <li> Engine Javascript V8 do Google Chrome</li>
+                    <li> Non-Blocking-Thread</li>
+                    <li> Single-thread </li>
+                    <li> Asynchronous & modular programming </li>
+                </ul>
+            </section>
+            <section>
+                  <h1 class="red"> ExpressJS </h1>
+                  <h3 class="orange"> Interface RESTFul </h3>
+                  <h3 class="orange"> MVC </h3>
+                  <h5 class="orange"> MongoDB usando Mongoose </h5>
+            </section>
+            <section>
+                  <h1 class="red"> NPM </h1>
+            </section>
+            <section>
+                  <code class="bash hljs big-text">npm install -g express-generator</code>
+            </section>
+            <section>
+                  <pre><code class="bash hljs">express meuProjeto --ejs
+<span class="hljs-built_in">cd</span> meuProjeto
+npm install</code></pre>
+            </section>
+            <section>
+                <h3 class="red"> package.json </h3>
+                <pre><code class="json hljs">{
+    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"meuProjeto"</span></span>,
+    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"descrição do meu Projeto"</span></span>,
+    "<span class="hljs-attribute">version</span>": <span class="hljs-value"><span class="hljs-string">"0.0.1"</span></span>,
+    "<span class="hljs-attribute">private</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">dependencies</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">express</span>": <span class="hljs-value"><span class="hljs-string">"~4.6.1"</span></span>,
+        "<span class="hljs-attribute">cookie-parser</span>": <span class="hljs-value"><span class="hljs-string">"~1.3.2"</span></span>,
+        "<span class="hljs-attribute">body-parser</span>": <span class="hljs-value"><span class="hljs-string">"~1.4.3"</span></span>,
+        "<span class="hljs-attribute">ejs</span>": <span class="hljs-value"><span class="hljs-string">"~1.0.0"</span>
+    </span>}
+</span>}</code></pre>
+            </section>
+            <section>
+                   <h3 class="red"> app.js </h3>
+                   <pre><code class="javascript hljs"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">var</span> load = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express-load"</span>);
+<span class="hljs-keyword">var</span> app = express();
+
+app.set(<span class="hljs-string">"views"</span>, __dirname + <span class="hljs-string">"/views"</span>);
+app.set(<span class="hljs-string">"view engine"</span>, <span class="hljs-string">"ejs"</span>);
+app.use(express.static(__dirname + <span class="hljs-string">"/public"</span>));
+
+load(<span class="hljs-string">"middlewares"</span>)
+    .then(<span class="hljs-string">"models"</span>)
+    .then(<span class="hljs-string">"controllers"</span>)
+    .then(<span class="hljs-string">"routes"</span>)
+    .into(app);
+
+app.listen(<span class="hljs-number">3000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{ 
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Estamos no ar!"</span>); 
+});</code></pre>
+            </section>
+        </div>
+    </div>
+    <script data-main="app" src="../../lib/require.js"></script>
+</body>
+
+</html>

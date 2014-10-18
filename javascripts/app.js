@@ -1,12 +1,14 @@
 requirejs.config({
     "paths": {
-      "reveal": "../javascripts/lib/reveal.js/js/reveal.min",
-      "head" : "../javascripts/lib/reveal.js/lib/js/head.min"
+        "reveal": "../lib/reveal/js/reveal.min",
+        "head": "../lib/reveal/lib/js/head.min",
+        "highlight": "../lib/highlightjs/highlight.pack"
     }
 });
 
-requirejs(["head", "reveal"], function (){
+requirejs(["head", "reveal", "highlight"], function () {
     Reveal.initialize({
-            width: 1024
+        width: 1024
     });
+    hljs.initHighlightingOnLoad();
 });

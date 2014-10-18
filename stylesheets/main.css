@@ -15,8 +15,3 @@
 .big li:nth-child(odd){
     color: #528CE0 !important;
 }
-
-pre{
-    background: #3F3F3F !important;
-    min-height: 400px;
-}
