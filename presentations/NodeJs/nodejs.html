@@ -24,29 +24,32 @@
             </section>
             <section>
                 <ul>
-                    <li> 2009 por Ryan Dahl </li>
-                    <li> Engine Javascript V8 do Google Chrome</li>
-                    <li> Non-Blocking-Thread</li>
-                    <li> Single-thread </li>
-                    <li> Asynchronous & modular programming </li>
+                    <li>2009 por Ryan Dahl</li>
+                    <li>Engine Javascript V8 do Google Chrome</li>
+                    <li>Non-Blocking-Thread</li>
+                    <li>Single-thread</li>
+                    <li>Asynchronous & modular programming</li>
                 </ul>
             </section>
             <section>
-                  <h1 class="red"> ExpressJS </h1>
-                  <h3 class="orange"> Interface RESTFul </h3>
-                  <h3 class="orange"> MVC </h3>
-                  <h5 class="orange"> MongoDB usando Mongoose </h5>
+                <h1 class="red"> ExpressJS </h1>
+                <h3 class="orange"> Interface RESTFul </h3>
+                <h3 class="orange"> MVC </h3>
+                <h5 class="orange"> MongoDB usando Mongoose </h5>
             </section>
             <section>
-                  <h1 class="red"> NPM </h1>
+                <h1 class="red"> NPM </h1>
             </section>
             <section>
-                  <code class="bash hljs big-text">npm install -g express-generator</code>
+                <code class="bash hljs big-text">npm install -g express-generator</code>
             </section>
             <section>
-                  <pre><code class="bash hljs">express meuProjeto --ejs
+                <pre><code class="bash hljs">express meuProjeto --ejs
 <span class="hljs-built_in">cd</span> meuProjeto
 npm install</code></pre>
+            </section>
+            <section>
+                <img id="diretorios" src="diretorios.png">
             </section>
             <section>
                 <h3 class="red"> package.json </h3>
@@ -64,8 +67,8 @@ npm install</code></pre>
 </span>}</code></pre>
             </section>
             <section>
-                   <h3 class="red"> app.js </h3>
-                   <pre><code class="javascript hljs"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+                <h3 class="red"> app.js </h3>
+                <pre><code class="javascript hljs"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
 <span class="hljs-keyword">var</span> load = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express-load"</span>);
 <span class="hljs-keyword">var</span> app = express();
 
@@ -82,6 +85,42 @@ load(<span class="hljs-string">"middlewares"</span>)
 app.listen(<span class="hljs-number">3000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{ 
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Estamos no ar!"</span>); 
 });</code></pre>
+            </section>
+            <section>
+                <section>
+                    <ul>
+                        <li>Routes</li>
+                        <li>Controllers</li>
+                        <li>Models</li>
+                        <li>Middlewares</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="orange"> Routes </h3>
+                    <ul>
+                        <li> Caminhos do programa </li>
+                        <li> API de comunicação com o cliente </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="orange"> Controllers </h3>
+                    <ul>
+                        <li> Regras de negócio </li>
+                        <li> Decide o que enviar pro usuário </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="orange"> Models </h3>
+                    <ul>
+                        <li> Estruturas da aplicação </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="orange"> Middlewares </h3>
+                    <ul>
+                        <li> </li>
+                    </ul>
+                </section>
             </section>
         </div>
     </div>

@@ -20,3 +20,7 @@ ul{
 pre{
     font-size: 30px !important;
 }
+
+#diretorios{
+    transform: scale(2);
+}
