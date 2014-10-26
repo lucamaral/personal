@@ -24,3 +24,20 @@ pre{
 #diretorios{
     transform: scale(2);
 }
+
+.pull-right{
+    float: right;
+}
+
+.route{
+    width: 400px;
+}
+
+.route-method{
+    width: 30% !important;
+}
+
+.route-path{
+    width: 50% !important;
+    float: right;
+}
